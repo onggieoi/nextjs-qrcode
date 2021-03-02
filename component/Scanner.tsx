@@ -75,7 +75,6 @@ const Scanner = () => {
                 }}
                 onScan={(result) => {
                   if (result) {
-                    console.log(result);
                     setId(result.toString());
                   }
                 }}

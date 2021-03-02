@@ -15,11 +15,11 @@ export default function prepareConnection() {
       }
       await createConnection({
         type: 'postgres',
-        host: '127.0.0.1',
+        host: 'john.db.elephantsql.com',
         port: 5432,
-        database: 'damsen',
-        username: 'onggieoi',
-        password: 'onggieoi@123',
+        database: 'tbeiekcb',
+        username: 'tbeiekcb',
+        password: '5cRF60aQPKK_GTHwc4_BHTCvmMKgH_Iw',
         synchronize: true,
         entities: [Customer],
       });
