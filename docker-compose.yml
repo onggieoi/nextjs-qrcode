@@ -1,0 +1,15 @@
+version: "3"
+services:
+  #Database Service
+  dbserver:
+    image: postgres
+    container_name: dbserver
+    restart: always
+    environment:
+      POSTGRES_USER: onggieoi
+      POSTGRES_PASSWORD: onggieoi@123
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_DB: damsen
+      TZ: Asia/Ho_Chi_Minh
+    ports:
+      - 5432:5432
